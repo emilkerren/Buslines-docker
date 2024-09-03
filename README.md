@@ -13,7 +13,7 @@ No need for maven since a wrapper is included
 To install the project, follow these steps:
 
 1. Clone the com.sl.buslines.repository to your local machine.
-2. Navigate to the backend module of the project and run mvn clean install -DskipTests to build the backend.
+2. Navigate to the root directory of the project and run mvn clean install to build the backend.
 3. Have docker installed and set containers to be linux
 
 ## Running
