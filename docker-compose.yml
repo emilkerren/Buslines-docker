@@ -1,0 +1,28 @@
+services:
+  spring-boot-app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: spring-boot-app
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+  node-app:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: node-app
+    ports:
+      - "3003:3003"
+    environment:
+      - PORT=3003
+    depends_on:
+      - spring-boot-app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

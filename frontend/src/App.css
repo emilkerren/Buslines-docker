@@ -1,0 +1,41 @@
+/* import React, { useState, useEffect } from 'react';
+
+function App() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('/api/data')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error(error));
+  }, []);
+
+  return (
+    <div>
+      {data ? (
+        <div>
+          <p>Status Code: {data.statusCode}</p>
+          <p>Message: {data.message}</p>
+          <p>Execution Time: {data.executionTime}</p>
+          <p>Version: {data.responseData.version}</p>
+          <p>Type: {data.responseData.type}</p>
+          <ul>
+            {data.responseData.result.map(result => (
+              <li key={result.journeyPatternPointNumber}>
+                <p>Line Number: {result.lineNumber}</p>
+                <p>Direction Code: {result.directionCode}</p>
+                <p>Journey Pattern Point Number: {result.journeyPatternPointNumber}</p>
+                <p>Last Modified UTC Date Time: {result.lastModifiedUtcDateTime}</p>
+                <p>Exists From Date: {result.existsFromDate}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
+  );
+}
+
+export default App; */

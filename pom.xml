@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.5</version>
+		<relativePath/> <!-- lookup parent from com.sl.buslines.repository -->
+	</parent>
+	<groupId>com.sl.buslines</groupId>
+	<artifactId>buslines</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>buslines</name>
+	<description>Spring Boot and React project to show the most bus stop heavy bus lines</description>
+	<modules>
+		<module>frontend</module>
+		<module>backend</module>
+	</modules>
+	<packaging>pom</packaging>
+	<properties>
+		<java.version>17</java.version>
+		<node.version>19.9.0</node.version>
+	</properties>
+
+</project>
